@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" name="username" placeholder="Username" required>
+            <input type="password" id="login-password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div class="register-form">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" name="username" placeholder="Username" required>
+            <input type="password" id="register-password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        // Αποτροπή προεπιλεγμένης συμπεριφοράς φόρμας
+        event.preventDefault();
+        const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+
+    fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: username, password: password }),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Login failed.');
+        }
+        // Εάν η απάντηση είναι επιτυχής, ανακατεύθυνση στην index.html
+        window.location.href = 'index.html';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Εάν η απάντηση είναι ανεπιτυχής, εμφάνιση μηνύματος σφάλματος
+        alert('Login failed. Please check your username and password.');
+    });
+        // Εδώ θα πρέπει να γίνει ο έλεγχος για τα στοιχεία εισόδου
+        // Και αν είναι επιτυχής η σύνδεση, ανακατεύθυνση στην index.html
+        window.location.href = 'index.html';
+    });
+
+   
+    document.getElementById('register-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('register-username').value;
+    const password = document.getElementById('register-password').value;
+
+    fetch('/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: username, password: password }),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Registration failed.');
+        }
+        // Εάν η απάντηση είναι επιτυχής, ανακατεύθυνση στην index.html
+        window.location.href = 'index.html';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Εάν η απάντηση είναι ανεπιτυχής, εμφάνιση μηνύματος σφάλματος
+        alert('Registration failed. Please try again later.');
+    });
+    
+});
+
+</script>
+</html>

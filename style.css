@@ -1,0 +1,422 @@
+/* BEGIN CODE HERE */
+.page{
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+}
+
+
+
+h1{
+  font-family: "Abril Fatface", serif;
+  
+  
+}
+.header{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  color: white;
+
+
+}
+
+.navbar{
+  list-style: none;
+  
+}
+.navbar a{
+  text-decoration: none;
+  padding: 2em;
+  font-family: "Abril Fatface", serif;
+  display: block;
+  color: white;
+}
+.navbar a:hover{
+ color: lightseagreen;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24
+}
+
+
+.image-1{
+  width: 600px;
+  height: 100%;
+}
+.frame-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.f-item-1{
+  width: 600px;
+  /*background-color: blue;*/
+}
+
+.frame-2-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.new-arrivals{
+  padding: 0 20px 0 20px;
+  display: flex;
+  
+ align-content: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ 
+
+
+}
+.item{
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  width: 250px;
+  text-align: center;
+  padding: 25px 15px;
+  margin: 15px 0;
+}
+.item:hover{
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+.tshirt-1{
+  width: 180px;
+  height: 300px;
+  
+}
+.frame-2 h2{
+  padding: 0 20px 0 20px;
+  font-family: "Abril Fatface", serif;
+
+}
+.products-container{
+  padding: 0 20px 0 20px;
+  display: flex;
+  
+ align-content: center;
+ justify-content: center;
+ gap: 10px;
+ flex-wrap: wrap;
+}
+.products-item{
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  width: 250px;
+  text-align: center;
+  padding: 25px 15px;
+  margin: 15px 0;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+.popup-window {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.5); /* Black with opacity */
+}
+.popup-content {
+  background-color: white;
+  margin: 15% auto; /* Center vertically */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Responsive width */
+ 
+  max-width: 1200px; /* Max width */
+  min-height: 400px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  margin-bottom: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Flex container to hold both left and right sections */
+.flexbox {
+  display: flex;
+  gap: 20px; /* Space between the columns */
+  justify-content: space-between;
+}
+
+/* Left side: Image, Price, and Add to Cart */
+.popup-left {
+  flex: 1; /* Make both sections take up equal space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content in the left column */
+}
+
+.left-column img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.left-column{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left-column-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.left.column .add-to-cart:hover {
+  background-color: #218838;
+}
+
+/* Right side: Description and Select Size */
+.right-column {
+  flex: 1; /* Make both sections take up equal space */
+  display: flex;
+  
+  flex-direction: column;
+}
+
+.right-column p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.right-column label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+#size-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Adjust popup content */
+.popup-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  min-height: 400px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens, stack the columns vertically */
+  .flexbox {
+    flex-direction: column;
+  }
+}
+
+
+
+/* Cart popup styles */
+.cart-popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px; /* Adjust as needed */
+  height: 100%; /* Full height of the viewport */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflow by default */
+}
+
+
+.cart-popup-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cart-popup-flex {
+  display: flex;
+  height: calc(100% - 50px); /* Adjust based on footer height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.cart-left {
+  flex: 1;
+  padding: 30px;
+  border-right: 1px solid #ddd; /* Optional styling */
+}
+
+.cart-right {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto; /* Ensure items are scrollable */
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd; /* Optional styling */
+  background-color: #f9f9f9; /* Optional styling */
+}
+
+#total-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart-right .cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-right .cart-item p {
+  margin: 0;
+}
+
+.cart-right .delete-item {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.cart-right .delete-item:hover {
+  background-color: darkred;
+}
+
+
+/* END CODE HERE */

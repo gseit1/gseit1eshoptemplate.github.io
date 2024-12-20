@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WIS Project - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <!-- BEGIN CODE HERE -->
+      <div class="page">
+        <div class="header">
+          <h1 >Embrase me</h1>
+          <ul class="navbar">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="homepage.html">About us</a></li>
+            <li><a href="products.html">Contact</a></li>
+            <li ><a href="login.html" data-bs-toggle="modal" data-bs-target="#signInModal">Log in</a></li>
+            
+              
+            
+              
+              
+            <li><a href="#" ><span class="material-symbols-outlined">
+              shopping_bag
+              </span></a></li>
+          </ul>
+          
+        </div>
+        <!--Sing in modal not shown if not triggered-->
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="signInModalLabel">Σύνδεση</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form id="loginForm">
+                          <div class="mb-3">
+                              <label for="signInEmail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="signInEmail" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="signInPassword" class="form-label">Κωδικός</label>
+                              <input type="password" class="form-control" id="signInPassword" required>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Σύνδεση</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+      <!--main screen content-->
+        <div class="frame-1">
+          <div class="f-item-1">
+            <h2>The Place Where You Shop With Your Imagination</h1>
+            <p>Products inspired by EcoFriendly humanity</p>
+          </div>
+          
+          <div class="f-item-2">
+            <img src="model.jpg" alt="pic" class="image-1">
+          </div>
+        </div>
+       
+        </div>
+        <!--New Arrivals Products -->
+        <div class="frame-2">
+          <h2>New arrivals</h2>
+        
+          <div class="new-arrivals">
+  
+            <div class="item" data-title="Oversized T-shirt minimalistic" data-price="15$" data-description="Comfortable and stylish oversized T-shirt perfect for casual wear." data-image="tshirt-1.jpg">
+              <img class="tshirt-1" src="tshirt-1.jpg" alt="">
+              <h6>Oversized T-shirt minimalistic</h6>
+              <p>15$</p>
+            </div>
+            
+            <div class="item" data-title="Oversized T-shirt minimalist 2" data-price="20$" data-description="Premium cotton oversized T-shirt with a minimalistic design." data-image="tshirt-2.jpg">
+              <img class="tshirt-1" src="tshirt-2.jpg" alt="">
+              <h6>Oversized T-shirt minimalist 2</h6>
+              <p>20$</p>
+            </div>
+            <div class="item" data-title="Oversized T-shirt minimalist 3" data-price="18$" data-description="Stylish oversized T-shirt available in various colors." data-image="tshirt-3.jpg">
+              <img class="tshirt-1" src="tshirt-3.jpg" alt="">
+              <h6>Oversized T-shirt minimalist 3</h6>
+              <p>18$</p>
+            </div>
+            <div class="item" data-title="Oversized T-shirt minimalist 4" data-price="25$" data-description="Oversized T-shirt with a unique design pattern." data-image="tshirt-4.jpg">
+              <img class="tshirt-1" src="tshirt-4.jpg" alt="">
+              <h6>Oversized T-shirt minimalist 4</h6>
+              <p>25$</p>
+            </div>
+          </div>
+        </div>
+          <!--Item pop up info-->
+          <div class="popup-window" id="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <div class="flexbox">
+                <div class="left-column">
+                  <h2 id="popup-title"></h2>
+                  <img id="popup-image" src="" alt="Item Image">
+                  <p id="popup-price"></p>
+                  <button type="button" class="add-to-cart btn btn-dark">Add to Cart</button>
+                </div>
+                <div class="right-column">
+                  <p id="popup-description"></p>
+                  <label for="size-select">Select Size:</label>
+                <select id="size-select">
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">Extra Large</option>
+                </select>
+                </div>
+              </div>
+             
+              
+              <p id="popup-description"></p>
+            </div>
+          </div>
+
+        <!--My cart pop up-->  
+       <!-- Cart Popup Window -->
+<div class="cart-popup" id="cart-popup">
+  <div class="cart-popup-content">
+    <span class="close-cart">&times;</span>
+    
+    <div class="cart-popup-flex">
+      <!-- Left side: Title and Description -->
+      <div class="cart-left">
+        <h2>Your Cart</h2>
+        <p>Review the items you've added to your cart.</p>
+      </div>
+      
+      <!-- Right side: Items List -->
+      <div class="cart-right" id="cart-items">
+        <!-- Items will be dynamically added here -->
+      </div>
+    </div>
+    
+    <!-- Total price and checkout button -->
+    <div class="cart-footer">
+      <p id="total-price">Total: $0</p>
+      <button class="checkout btn btn-dark">Checkout</button>
+    </div>
+  </div>
+</div>
+
+        <!--Footer of the page-->
+        <div class="footer">
+          <p>Seitaridis Georgios </p>
+        </div>
+      </div>
+    <!-- END CODE HERE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
